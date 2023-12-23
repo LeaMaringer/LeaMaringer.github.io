@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+nav { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+nav h1 {
+    font-size: 140%;
+    margin-left: 9%;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 40%;
+}
+
+nav ul a{
+    color: black;
+    font-size: 130%;
+    margin-left: 25%;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+nav ul a:hover {
+    border-bottom-color: black;
+    transition: 0.5s all;
+}
+
+.main {
+    margin-left: 15%; 
+    margin-right: 0%;
+    padding-top: 3%;
+}
+
+.main h1 {
+    text-transform: uppercase;
+    font-size: 170%;
+    font-weight: normal;
+    color: rgb(75, 75, 75);
+}
+
+.main .all {
+    display: flex;
+    flex-direction: row;
+}
+
+.main .all .reminder {
+    flex: 15;
+    margin-top: 6%;
+    margin-right: 5%;
+}
+
+.main .all .reminder ul {
+    list-style-type: none;
+}
+
+.main .all li {
+    margin-bottom: 3%;
+    font-size: 110%;
+}
+
+.main .all li a {
+    text-decoration: none;
+    color:rgb(165, 58, 58)
+}
+
+.main .all li a:hover {
+    text-decoration: underline;
+    color:rgb(109, 18, 18)
+}
+
+.main .all .contact_form {
+    flex: 70%;
+}
+
+.main .all .contact_form .fullName input {
+    width: 25%;
+    font-size: 110%;
+}
+
+.main .all .contact_form .mb-3 input {
+    width: 45%;
+    font-size: 110%;
+}
+
+.main .all .contact_form .mb-3 textarea {
+    width: 53%;
+    font-size: 140%;
+}
+
+.main .all .contact_form button {
+    border-radius: 10%;
+    font-size: 110%;
+    width: 8%;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin-top: 0%;
+    }
+
+    .main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    nav {
+        margin: 0%;
+        display: inline;
+        text-align: center;
+    }
+
+    nav h1 {
+        padding-top: 2.2%;
+        margin-left: 0;
+        background-color: white;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-bottom: 1%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        margin-right: 1%;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        align-items: center;
+        background-color: white;
+    }
+
+    nav ul a {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        border-bottom-color: black;
+    }
+
+    .main .all {
+        display: inline;
+    }
+
+    .main .all .reminder {
+        margin-bottom: 17%;
+        margin-top: 8%;
+    }
+
+    .main .all .contact_form .fullName input {
+        width: 42%;
+    }
+
+    .main .all .contact_form .fullName {
+        margin-top: 0%;
+    }
+
+    .main .all .contact_form .mb-3 input {
+        width: 95%;
+    }
+
+    .main .all .contact_form .mb-3 textarea {
+        width: 95%;
+    }
+
+    .main .all .contact_form button {
+        width: 30%;
+    }
+
+    .main h1 {
+        margin-bottom: 0%;
+    }
+}

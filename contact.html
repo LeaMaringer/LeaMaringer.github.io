@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Léa MARINGER - Contact page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/contact.css">
+        <script src="js/functions.js"></script>
+        <!--<script src="./styles/js/bootstrap.min.js"></script>-->
+        <script>
+        $(document).ready(function() {
+        
+            var docHeight = $(window).height();
+            var footerHeight = $('#footer').height();
+            var footerTop = $('#footer').position().top + footerHeight;
+        
+            if (footerTop < docHeight) 
+              $('#footer').css('margin-top', 80+ (docHeight - footerTop) + 'px');
+        });
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW29FJWP1K"></script> 
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EW29FJWP1K');
+        </script>
+    </head>
+
+    <body>
+        <nav>
+            <h1><a href="index.html">Léa MARINGER</a></h1>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="projects.html"><li>Projects</li></a>
+                <a href="cv_page.html"><li>CV</li></a>
+                <a href="coursework.html"><li>Coursework</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <div class="all">
+                <div class="reminder">
+                    <ul>
+                        <li><b>Email: </b>lea.maringer@gmail.com</li>
+                        <li><b>Phone: </b>+33 (0) 6 33 43 32 31</li>
+                        <li><b>LinkedIn: </b><a href="https://www.linkedin.com/in/lea-maringer/">Léa Maringer</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact_form">
+                    <h1>Contact me !</h1><br><br>
+                    <form class="contactForm"  method="POST" data-netlify="true" onSubmit="submit" >
+                        <div class="fullName" style="margin-bottom: 10px;">
+                            <input required type="text" class="form-control" style="margin-right: 20px;" id="firstName" name="firstName" aria-describedby="firstName" placeholder="First Name">
+                            <input required type="text" class="form-control" id="lastName" name="lastName" aria-describedby="lastName" placeholder="Last Name">
+                        </div>
+
+                        <div class="mb-3" style="margin-bottom: 10px;">
+                            <input required type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Email Address">
+                        </div>
+
+                        <div class="mb-3" style="margin-bottom: 10px;">
+                            <input required type="text" class="form-control" id="subject" name="subject" aria-describedby="email" placeholder="Subject">
+                        </div>
+
+                        <div class="mb-3" style="margin-bottom: 10px;">
+                            <textarea class="form-control" id="message" name="message" aria-describedby="message" placeholder="Message" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="background-color: #ee6e6e; margin-top: 20px;">Submit</button>
+                     </form>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+    </body>
+</html>
