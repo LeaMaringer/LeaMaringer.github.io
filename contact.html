@@ -27,6 +27,13 @@
           gtag('js', new Date());
           gtag('config', 'G-MV8GNVC1E7');
         </script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("SWaPHxTtpgQoTONUOAru_");
+        })();
+        </script>
+        <script src="js/form.js"></script>
     </head>
 
     <body>
@@ -52,10 +59,10 @@
 
                 <div class="contact_form">
                     <h1>Contact me !</h1><br><br>
-                    <form class="contactForm"  method="POST" data-netlify="true" onSubmit="submit" >
+                    <form id="contactForm" class="contactForm">
                         <div class="fullName" style="margin-bottom: 10px;">
-                            <input required type="text" class="form-control" style="margin-right: 20px;" id="firstName" name="firstName" aria-describedby="firstName" placeholder="First Name">
-                            <input required type="text" class="form-control" id="lastName" name="lastName" aria-describedby="lastName" placeholder="Last Name">
+                            <input required type="text" class="form-control" style="margin-right: 20px;" id="firstName" name="firstname" aria-describedby="firstName" placeholder="First Name">
+                            <input required type="text" class="form-control" id="lastName" name="lastname" aria-describedby="lastName" placeholder="Last Name">
                         </div>
 
                         <div class="mb-3" style="margin-bottom: 10px;">
