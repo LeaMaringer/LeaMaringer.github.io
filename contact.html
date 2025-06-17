@@ -8,8 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/contact.css">
         <script src="js/functions.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!--<script src="./styles/js/bootstrap.min.js"></script>-->
-        <script>
+        <!--<script>
         $(document).ready(function() {
         
             var docHeight = $(window).height();
@@ -19,7 +20,7 @@
             if (footerTop < docHeight) 
               $('#footer').css('margin-top', 80+ (docHeight - footerTop) + 'px');
         });
-        </script>
+        </script>-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV8GNVC1E7"></script> 
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -27,12 +28,30 @@
           gtag('js', new Date());
           gtag('config', 'G-MV8GNVC1E7');
         </script>
-        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
         (function(){
             emailjs.init("hperDODrBs1StgBc8");
         })();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_yhy3ipv', 'template_iv4cics', form)
+                .then(() => {
+                alert('Your message has been sent successfully!');
+                form.reset();
+                })
+                .catch((error) => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+                });
+            });
+        });
         </script>
+
     </head>
 
     <body>
@@ -83,6 +102,5 @@
         </div>
 
         <br><br><br><br><br>
-    <script src="js/form.js"></script>
     </body>
 </html>
