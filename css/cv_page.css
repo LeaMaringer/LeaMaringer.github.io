@@ -46,7 +46,8 @@ nav ul a{
 }
 
 nav ul a:hover {
-    border-bottom-color: black;
+    color: rgb(39, 106, 206);
+    border-bottom-color: rgb(39, 106, 206);
     transition: 0.5s all;
 }
 
@@ -59,13 +60,17 @@ nav ul a:hover {
 .main h1 {
     text-transform: uppercase;
     font-size: 170%;
-    font-weight: normal;
-    color: rgb(75, 75, 75);
+    font-weight: bold;
+    color: black;
 }
 
 .main a {
     text-decoration: none;
-    color: rgb(165, 58, 58);
+    color: rgb(15, 79, 173);
+}
+
+.main a:hover {
+    color: rgb(45, 110, 207);
 }
 
 .main .all {

@@ -46,7 +46,8 @@ nav ul a{
 }
 
 nav ul a:hover {
-    border-bottom-color: black;
+    color: rgb(39, 106, 206);
+    border-bottom-color: rgb(39, 106, 206);
     transition: 0.5s all;
 }
 
@@ -59,14 +60,14 @@ nav ul a:hover {
 .main h1 {
     text-transform: uppercase;
     font-size: 190%;
-    font-weight: normal;
-    color: rgb(75, 75, 75);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
 .main h2 {
     font-weight: bold;
     font-style: italic;
-    color:rgb(129, 59, 59)
+    color:rgb(15, 79, 173);
 }
 
 .main .project ul {
@@ -86,8 +87,13 @@ nav ul a:hover {
 }
 
 .project a {
-    color: brown;
+    color: rgb(15, 79, 173);
 }
+
+.project a:hover {
+    color: rgb(45, 110, 207);
+}
+
 
 @media screen and (max-width: 700px) {
     body {

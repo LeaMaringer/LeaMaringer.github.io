@@ -37,7 +37,8 @@ nav ul {
 }
 
 nav ul a:hover {
-    border-bottom-color: black;
+    color: rgb(39, 106, 206);
+    border-bottom-color: rgb(39, 106, 206);
     transition: 0.5s all;
 }
 
@@ -88,12 +89,12 @@ nav ul a{
 }
 
 .left_side a {
-    color: rgb(165, 58, 58) ;
+    color: rgb(15, 79, 173);
     text-decoration: none;
 }
 
 .left_side a:hover{
-    color: rgb(109, 18, 18);
+    color: rgb(45, 110, 207);
     transition: 0.5s all;
 }
 
@@ -113,6 +114,7 @@ nav ul a{
 .presentation h1 {
     font-family: 'Cinzel Decorative', sans-serif ;
     font-size: 230%;
+    color: rgb(15, 79, 173);
 }
 
 @media screen and (max-width: 700px) {
